@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        .button{
+            display:inline-block;
+            padding: 15px 25px;
+            font-size:24px;
+            cursor:pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color:#fff;
+            background-color: #8B0000;
+            border:none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover{background-color:#FF6347}
+
+        .button:active{
+            background-color:#FF6347;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .wrapper{
+            display: flex;
+            gap: 15px;
+        }
+
+        button.start{
+            background-color: #077e21;
+        }
+        
+        button.start:hover{background-color:#09ac24}
+        
+        button.start:active{
+            background-color:#07ff28;   
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Quebra Cabeça da Informática</h2>
+    <div id="grade"></div>
+    <br>
+    <div class="wrapper">
+        <button onclick class="button start">Anterior</button>
+        <button onclick class="button next">Próxima</button>
+
+    </div>
+  
+
+    <script type="text/javascript" src="quebracabeca.js"></script>
+</body>
+</html>

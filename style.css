@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    /*organiza os elementos HTML de forma responsiva vertical ou horinzontal*/
+    flex-direction: column;
+    /*define como os itens flexíveis são colocados no contêiner*/
+    align-items: center;
+    background: #2d3436;
+    font-family: sans-serif;
+    background: url('./img/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h2 {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2em;
+    /* 2em vale o dobro do tamanho*/
+    font-family: Century725 Cn BT;
+    font-weight: bold;
+    align-items: center;
+
+}
+#imgbase{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+#grade {
+    height: 400px;
+    width: 600px;
+    
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+
+#grade div {
+    width:100px;
+    height:100px;
+    position: absolute;
+    background: url('./img/mouse.jpg');
+    
+    background-size: 600px 400px;
+    transition: 0.25s ease-in-out;
+
+}
+
+#grade div:hover {
+    z-index:i0;
+    opacity: 0.7;
+    transform:scale(1.1);
+    box-shadow:0px 0px 3px 3px white;
+}
+
